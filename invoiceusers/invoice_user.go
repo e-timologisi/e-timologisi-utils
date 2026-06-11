@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nmpatzios/go-utils/resterrors"
+	"github.com/e-timologisi/e-timologisi-utils/resterrors"
 )
 
 type BranchStore struct {

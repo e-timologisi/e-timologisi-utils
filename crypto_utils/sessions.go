@@ -15,9 +15,9 @@ import (
 
 	"github.com/dgrijalva/jwt-go"
 
-	"github.com/nmpatzios/go-utils/http_utils"
-	"github.com/nmpatzios/go-utils/logger"
-	"github.com/nmpatzios/go-utils/resterrors"
+	"github.com/e-timologisi/e-timologisi-utils/http_utils"
+	"github.com/e-timologisi/e-timologisi-utils/logger"
+	"github.com/e-timologisi/e-timologisi-utils/resterrors"
 )
 
 var (

@@ -1,4 +1,4 @@
-module github.com/nmpatzios/go-utils
+module github.com/e-timologisi/e-timologisi-utils
 
 go 1.22
 
