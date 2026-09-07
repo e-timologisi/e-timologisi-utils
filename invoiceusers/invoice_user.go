@@ -408,7 +408,10 @@ type BratnetProvider struct {
 type EParoxosProvider struct {
 	ApiKey        string    `json:"api_key"`
 	Parastatika   []string  `json:"parastatika"`
+	ProviderFee   string    `json:"provider_fee"`
 	ExpiredAt     string    `json:"expired_at"`
+	TotalPoints   int       `json:"total_points"`
+	UsedPoints    int       `json:"used_points"`
 	EmailSent     bool      `json:"email_sent"`
 	EmailSendDate time.Time `json:"email_send_date"`
 	CreatedAt     time.Time `json:"created_at"`
