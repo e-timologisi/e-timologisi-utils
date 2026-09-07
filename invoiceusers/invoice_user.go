@@ -170,6 +170,8 @@ type User struct {
 	ReferredUsers              []string                 `json:"referred_users"` // List of user IDs referred by this user
 	IsSalesMan                 bool                     `json:"is_sales_man"`
 	BratnetProvider            BratnetProvider          `json:"bratnet_provider"`
+	IsEParoxosProvider         bool                     `json:"is_eparoxos_provider"`
+	EParoxosProvider           EParoxosProvider         `json:"eparoxos_provider"`
 	VanTameiakiVehicles        []VanTameiakiVehicle     `json:"van_tameiaki_vehicles"`
 	RestaurantUserPassword     string                   `json:"restaurant_user_password"`
 	MyDataApostoliParastatikon bool                     `json:"my_data_apostoli_parastatikon"`
@@ -396,6 +398,17 @@ type BratnetProvider struct {
 	B2G           bool      `json:"b2g"`
 	TotalPoints   int       `json:"total_points"`
 	UsedPoints    int       `json:"used_points"`
+	EmailSent     bool      `json:"email_sent"`
+	EmailSendDate time.Time `json:"email_send_date"`
+	CreatedAt     time.Time `json:"created_at"`
+	ActivatedAt   time.Time `json:"activated_at"`
+}
+
+// EParoxosProvider holds the per-user credentials/settings for the E-Paroxos ERP API (X-EPAROXOS-API-KEY).
+type EParoxosProvider struct {
+	ApiKey        string    `json:"api_key"`
+	Parastatika   []string  `json:"parastatika"`
+	ExpiredAt     string    `json:"expired_at"`
 	EmailSent     bool      `json:"email_sent"`
 	EmailSendDate time.Time `json:"email_send_date"`
 	CreatedAt     time.Time `json:"created_at"`
