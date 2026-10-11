@@ -91,6 +91,8 @@ type FinishProfileSettings struct {
 }
 
 type User struct {
+	MellonAuth                 MellonAuth               `json:"mellon_auth"`
+	MellonPosTerminals         []MellonPosTerminal      `json:"mellon_pos_terminals"`
 	ID                         string                   `json:"id"`
 	Name                       string                   `json:"name"`
 	Username                   string                   `json:"username"`
