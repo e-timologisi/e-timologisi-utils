@@ -25,3 +25,11 @@ No AADE (myDATA) or invoice-provider send, build, read or error-handling logic (
 4. Both services' PR checks must pass after the bump, including their e2e jobs (`E2E Bratnet route`, `E2E E-Paroxos route` in mydata-api; `E2E invoice chain` in e-timologisi-api). A bump that weakens or skips an e2e check is not acceptable.
 
 Every merge to a consuming service's `main` deploys to production. Agents do not push tags unless the owner asks.
+
+## Before you write code (extend first)
+1. Read `../e-timologisi-docs/docs/as-is/catalog-existing-solutions.md`, then `../e-timologisi-docs/docs/as-is/e-timologisi-utils/overview.md`.
+2. Find the owning repo (`../e-timologisi-docs/docs/architecture/service-map.md`) and the nearest existing example. Extend it; never build a parallel solution.
+3. Smallest refactor in a separate commit if it does not fit; new code only in the same layout, naming, error and test style.
+4. Rules: `../e-timologisi-docs/docs/rules/extend-first.md`. Stop and justify if > 10 files or > 150 rewritten lines.
+5. Every task and PR body needs the Reuse note: `../e-timologisi-docs/docs/rules/reuse-note.md`. Fiscal changes need their e2e case.
+6. If the code and these docs disagree, the code wins; fix the doc in e-timologisi-docs (committed straight to main there; the service repos still use PRs).
