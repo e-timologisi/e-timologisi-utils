@@ -30,6 +30,6 @@ Every merge to a consuming service's `main` deploys to production. Agents do not
 1. Read `../e-timologisi-docs/docs/as-is/catalog-existing-solutions.md`, then `../e-timologisi-docs/docs/as-is/e-timologisi-utils/overview.md`.
 2. Find the owning repo (`../e-timologisi-docs/docs/architecture/service-map.md`) and the nearest existing example. Extend it; never build a parallel solution.
 3. Smallest refactor in a separate commit if it does not fit; new code only in the same layout, naming, error and test style.
-4. Rules: `../e-timologisi-docs/docs/rules/extend-first.md`. Stop and justify if > 10 files or > 150 rewritten lines.
+4. Rules: `../e-timologisi-docs/docs/rules/extend-first.md`.
 5. Every task and PR body needs the Reuse note: `../e-timologisi-docs/docs/rules/reuse-note.md`. Fiscal changes need their e2e case.
 6. If the code and these docs disagree, the code wins; fix the doc in e-timologisi-docs (committed straight to main there; the service repos still use PRs).
