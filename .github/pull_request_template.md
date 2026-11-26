@@ -11,6 +11,5 @@
 - Reused or extended (path:symbol):
 - Deliberately not reused (and why):
 - Nearest example followed:
-- Size: files changed / existing lines rewritten (justify if over 10 files / 150 lines):
 
 Docs updated (README / e-timologisi-docs / ADR), or why none:
